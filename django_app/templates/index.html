@@ -1,0 +1,6 @@
+<form action="" method="POST">{% csrf_token %}
+    {% for fields in form %}
+    {{ fields.label }}<br> {{ fields }}<hr>
+    {% endfor %}
+    <button type = "submit">보내자</button>
+</frm>
